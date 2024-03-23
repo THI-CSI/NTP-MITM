@@ -22,7 +22,7 @@ def get_ntp_data():
 
 def serve_ntp():
     server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    server.bind(("0.0.0.0", 123))
+    server.bind(("localhost", 123))
 
     print("NTP server running...")
     while True:
